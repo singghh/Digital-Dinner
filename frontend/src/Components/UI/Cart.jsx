@@ -28,7 +28,7 @@ function Cart() {
     }
 
     try {
-      const response = await axios.post("http://localhost:5000/api/orders", {
+      const response = await axios.post("https://digital-dinner-4yb8.onrender.com/api/orders", {
         name,
         phone,
         cartItems: cart,
@@ -39,7 +39,7 @@ function Cart() {
       setPhone("");
       setShowOrderForm(false);
 
-      if (response.data.message === "Order placed successfully check Orders!") {
+      if (response.data.message === "Order placed successfully!") {
         toast.success("🎉 Order placed successfully!", {
           position: "top-right",
           autoClose: 2000,
