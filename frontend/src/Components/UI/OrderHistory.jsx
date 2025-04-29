@@ -15,7 +15,7 @@ function OrderHistory() {
     try {
       setLoading(true);
       const response = await axios.get(
-        `http://localhost:5000/api/orders/${phone}`
+        `https://digital-dinner-4yb8.onrender.com/api/orders/${phone}`
       );
       setOrders(response.data);
     } catch (error) {
