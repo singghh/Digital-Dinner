@@ -4,6 +4,8 @@ The Digital Diner" is a small, popular restaurant looking to improve its custome
 A responsive full-stack food ordering application built with **React + Express**, using **MongoDB Atlas** for menu storage and **Render PostgreSQL** for order tracking.
 
 Frontend:
+
+---
 Landing Page : ![Screenshot_29-4-2025_15617_localhost](https://github.com/user-attachments/assets/df25647d-ac0b-447c-a80b-295f01be623f)
 CartPage: ![Screenshot_29-4-2025_15638_localhost](https://github.com/user-attachments/assets/e31e7e91-8392-4307-bc19-dea9ec401caf)
 SingleProductPage: ![Screenshot_29-4-2025_1578_localhost](https://github.com/user-attachments/assets/43aa7be6-a4d1-413d-a389-a1757b5e2173)
@@ -65,6 +67,7 @@ cd Digital-Dinner
 - Ensure your backend either:
   - Calls a table creation function on startup or
   - Create it manually via pgAdmin:
+    
   ```bash
   CREATE TABLE orders (
   id SERIAL PRIMARY KEY,
@@ -89,13 +92,13 @@ npm run dev
 ```
 # 🌐 API Endpoints
 
-  ## Menu (MongoDB)
-    ### GET /api/menu → Fetch all menu items
-    ### GET /api/menu/:id → Fetch a specific menu item (optional)
+## Menu (MongoDB)
+  ### GET /api/menu → Fetch all menu items
+  ### GET /api/menu/:id → Fetch a specific menu item (optional)
 
-  ## Orders (PostgreSQL)
-    ### POST /api/orders → Create a new order
-    ### GET /api/orders/:phone → Get past orders by phone number
+## Orders (PostgreSQL)
+  ### POST /api/orders → Create a new order
+  ### GET /api/orders/:phone → Get past orders by phone number
 
 ## ⚠️ Challenges Faced
 
