@@ -9,6 +9,7 @@ function Cart() {
   const [showOrderForm, setShowOrderForm] = useState(false);
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
+  let username = /^[a-zA-Z][a-zA-Z0-9_]{2,15}$/;
 
   const grandTotal = cart.reduce(
     (total, item) => total + item.price * (item.quantity || 1),
@@ -22,22 +23,34 @@ function Cart() {
       toast.error("Please fill in all fields!", { theme: "light" });
       return;
     }
+    if (name.length < 6) {
+      toast.error("Name should be more than 6 characters", { theme: "light" });
+      return;
+    }
     if (phone.length !== 10) {
+      toast.error("Phone Number should be 10 digits", { theme: "light" });
+      return;
+    }
+    if (!name.match(username)) {
       toast.error("Please enter a valid phone number!", { theme: "light" });
       return;
     }
 
     try {
-      const response = await axios.post("https://digital-dinner-4yb8.onrender.com/api/orders", {
-        name,
-        phone,
-        cartItems: cart,
-        totalPrice: grandTotal,
-      });
+      const response = await axios.post(
+        "https://digital-dinner-4yb8.onrender.com/api/orders",
+        {
+          name,
+          phone,
+          cartItems: cart,
+          totalPrice: grandTotal,
+        }
+      );
 
       setName("");
       setPhone("");
       setShowOrderForm(false);
+      console.log(response.data);
 
       if (response.data.message === "Order placed successfully!") {
         toast.success("🎉 Order placed successfully!", {
@@ -174,7 +187,7 @@ function Cart() {
                       required
                     />
                     <input
-                      type="text"
+                      type="number"
                       placeholder="Phone Number"
                       className="block w-full p-2 mb-4 border rounded"
                       value={phone}
