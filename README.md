@@ -69,7 +69,7 @@ Each `menuitems` document follows this format:
   "category": "Main Course | Desserts | Drinks | etc.",
   "imageUrl": "https://example.com/image.jpg"
 }
-
+```
 
 ## 3. Setup PostgreSQL (for orders)
 - Create a free PostgreSQL database on Render.
