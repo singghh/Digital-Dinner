@@ -11,7 +11,7 @@ CartPage: ![Screenshot_29-4-2025_15638_localhost](https://github.com/user-attach
 SingleProductPage: ![Screenshot_29-4-2025_1578_localhost](https://github.com/user-attachments/assets/43aa7be6-a4d1-413d-a389-a1757b5e2173)
 OrderHistory Page: ![Screenshot_29-4-2025_15652_localhost](https://github.com/user-attachments/assets/90afa21a-b920-4379-b27e-0bc503c155eb)
 
-##Note:
+## Note:
 - First, open the backend link to bring the backend up, and then open the frontend link to interact with the site.
 > Live Frontend: [https://verdant-crepe-1fd420.netlify.app](https://verdant-crepe-1fd420.netlify.app)  
 > Live Backend: [https://digital-dinner-4yb8.onrender.com](https://digital-dinner-4yb8.onrender.com)
