@@ -75,12 +75,12 @@ cd Digital-Dinner
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
   );
   ```
-  ## 4. Run the Backend Locally
-  ```bash
+## 4. Run the Backend Locally
+```bash
   cd backend
   npm install
   npm run dev
-  ```
+```
 ## 5. Run the Frontend Locally
 ```bash
 cd frontend
@@ -90,12 +90,12 @@ npm run dev
 # 🌐 API Endpoints
 
   ## Menu (MongoDB)
-  ### GET /api/menu → Fetch all menu items
-  ### GET /api/menu/:id → Fetch a specific menu item (optional)
+    ### GET /api/menu → Fetch all menu items
+    ### GET /api/menu/:id → Fetch a specific menu item (optional)
 
   ## Orders (PostgreSQL)
-  ### POST /api/orders → Create a new order
-  ### GET /api/orders/:phone → Get past orders by phone number
+    ### POST /api/orders → Create a new order
+    ### GET /api/orders/:phone → Get past orders by phone number
 
 ## ⚠️ Challenges Faced
 
