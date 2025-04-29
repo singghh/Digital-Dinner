@@ -11,7 +11,7 @@ function Card() {
 
   useEffect(() => {
     async function fetchMenuItem() {
-      const response = await fetch("http://localhost:5000/api/menu/");
+      const response = await fetch("https://digital-dinner-4yb8.onrender.com/api/menu/");
       const data = await response.json();
       setMenuItem(data);
       setFilteredItems(data);
