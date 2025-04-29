@@ -115,18 +115,18 @@ npm run dev
 
 ## ⚠️ Challenges Faced
 
-PostgreSQL on Render required 
+- PostgreSQL on Render required 
 ```bash 
 ssl: { rejectUnauthorized: false }
 ```
-MongoDB import required JSON formatting with --jsonArray
+- MongoDB import required JSON formatting with --jsonArray
 
-Had to carefully manage environment-based API switching (local vs deployed)
+- Had to carefully manage environment-based API switching (local vs deployed)
 
-Dual-database setup required thoughtful folder & connection organization
+- Dual-database setup required thoughtful folder & connection organization
 
 ## ✨ Credits
-Built by [Bamla Varun Singh]
+Built by Bamla Varun Singh
 Using modern full-stack practices and cloud deployment architecture.
 
 ## 📬 Contact
