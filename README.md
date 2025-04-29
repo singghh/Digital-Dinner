@@ -93,7 +93,7 @@ npm run dev
 # 🌐 API Endpoints
 
 ## Menu (MongoDB)
-  ### GET /api/menu → Fetch all menu items
+  ### GET /api/menu → Fetch all menu items (https://digital-dinner-4yb8.onrender.com/api/menu)
   ### GET /api/menu/:id → Fetch a specific menu item (optional)
 
 ## Orders (PostgreSQL)
