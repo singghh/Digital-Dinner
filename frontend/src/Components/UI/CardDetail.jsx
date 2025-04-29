@@ -7,7 +7,7 @@ function CardDetails() {
 
   useEffect(() => {
     async function fetchItemDetails() {
-      const response = await fetch(`http://localhost:5000/api/menu/${id}`);
+      const response = await fetch(`https://digital-dinner-4yb8.onrender.com/api/menu/${id}`);
       const data = await response.json();
       setItemDetails(data);
     }
