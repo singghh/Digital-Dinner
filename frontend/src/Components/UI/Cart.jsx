@@ -9,7 +9,7 @@ function Cart() {
   const [showOrderForm, setShowOrderForm] = useState(false);
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
-  let name = /^[a-zA-Z]+(?: [a-zA-Z]+)*$/;
+  let username = /^[a-zA-Z]+(?: [a-zA-Z]+)*$/;
 
   const grandTotal = cart.reduce(
     (total, item) => total + item.price * (item.quantity || 1),
