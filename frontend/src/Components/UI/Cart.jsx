@@ -32,7 +32,7 @@ function Cart() {
       return;
     }
     if (!name.match(username)) {
-      toast.error("Please enter a valid phone number!", { theme: "light" });
+      toast.error("Please enter a valid name!", { theme: "light" });
       return;
     }
 
